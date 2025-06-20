@@ -1,7 +1,7 @@
 {
   "name": "@dariobrozzi/c64-design-system",
   "description": "A vintage Design System inspired on Commodore interface",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dariobrozzi/c64-design-system.git"
@@ -16,14 +16,17 @@
     "react"
   ],
   "type": "module",
-  "main": "dist/c64-design-system.js",
-  "types": "dist/c64-design-system.d.ts",
   "files": [
-    "dist",
-    "dist/style-dictionary",
-    "dist/fonts.css",
-    "dist/assets"
+    "dist"
   ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "build": "npm run build:tokens && tsc -b && vite build && npm run copy:assets",
     "build:tokens": "style-dictionary build --config style-dictionary/sd.config.js",
@@ -38,6 +41,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@eslint/js": "^9.25.0",
+    "@types/node": "^24.0.3",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
