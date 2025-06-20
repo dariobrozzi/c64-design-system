@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'C64 Pro Local';
+  src: url(./assets/fonts/C64_Pro-STYLE.ttf) format("truetype"),
+    url(./assets/fonts/C64_Pro-STYLE.otf) format("opentype"),
+    url(./assets/fonts/C64_Pro-STYLE.eot) format("embedded-opentype"),
+    url(./assets/fonts/C64_Pro-STYLE.woff) format("woff"),
+    url(./assets/fonts/C64_Pro-STYLE.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: 'C64 Pro Mono Local';
+  src: url(./assets/fonts/C64_Pro_Mono-STYLE.ttf) format("truetype"),
+    url(./assets/fonts/C64_Pro_Mono-STYLE.otf) format("opentype"),
+    url(./assets/fonts/C64_Pro_Mono-STYLE.eot) format("embedded-opentype"),
+    url(./assets/fonts/C64_Pro_Mono-STYLE.woff) format("woff"),
+    url(./assets/fonts/C64_Pro_Mono-STYLE.woff2) format("woff2");
+}

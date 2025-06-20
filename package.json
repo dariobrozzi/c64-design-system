@@ -6,17 +6,19 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "build:tokens": "style-dictionary build --config style-dictionary/config.json",
+    "build": "npm run build:tokens && tsc -b && vite build && npm run copy:assets",
+    "build:tokens": "style-dictionary build --config style-dictionary/sd.config.js",
+    "copy:assets": "cp -R src/assets dist/assets && cp src/fonts.css dist/fonts.css && cp -R src/generated/style-dictionary dist/style-dictionary",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "doc": "cd doc && npm run dev"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "@commitlint/cli": "^19.8.1",
     "@eslint/js": "^9.25.0",
     "@types/react": "^19.1.2",
@@ -30,5 +32,11 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
     "vite": "^6.3.5"
-  }
+  },
+  "files": [
+    "dist",
+    "dist/style-dictionary",
+    "dist/fonts.css",
+    "dist/assets"
+  ]
 }

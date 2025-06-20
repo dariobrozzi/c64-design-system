@@ -1,0 +1,36 @@
+{
+  "text": {
+    "font": {
+      "system": {
+        "type": "fontFamily",
+        "value": "system-ui, sans-serif"
+      },
+      "c64-pro": {
+        "name": {
+          "type": "fontFamily",
+          "value": "C64 Pro Local"
+        }
+      },
+      "c64-pro-mono": {
+        "name": {
+          "type": "fontFamily",
+          "value": "C64 Pro Mono Local"
+        }
+      }
+    },
+    "size": {
+      "small": {
+        "type": "fontSize",
+        "value": "0.875rem"
+      },
+      "base": {
+        "type": "fontSize",
+        "value": "1rem"
+      },
+      "large": {
+        "type": "fontSize",
+        "value": "1.25rem"
+      }
+    }
+  }
+}

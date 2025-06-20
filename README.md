@@ -1,17 +1,21 @@
 # C64 Design System
+This is a Vintage Design System inspired on Commodore interface, created for fun.
 
-A vintage Design System inspired by the C-64 interface.
-
-## WIP
-- Color tokens: definition and export to CSS Vars
-- Package v1.0 with color tokens
+```
+/doc           # documentation app
+/src           # design system source code
+/assets        # Fonts, images, etc.
+/style-dictionary
+/package.json
+/README.md
+```
 
 ## What's Next
-- Fonts
-- Themes and Layouts
-- Buttons
-- Text input
+- Extending tokens
+- Components
+- Complete documentation
 
 ## Resources
+- [Style Dictionary](https://styledictionary.com/)
 - [Color palette](https://en.wikipedia.org/wiki/Commodore_64#Graphics)
 - [Font](https://style64.org/c64-truetype)
