@@ -1,7 +1,7 @@
 {
   "name": "@dariobrozzi/c64-design-system",
   "description": "A vintage Design System inspired on Commodore interface",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dariobrozzi/c64-design-system.git"
