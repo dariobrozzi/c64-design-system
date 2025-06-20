@@ -1,7 +1,4 @@
-import Heading from './components/Heading';
-import Link from './components/Link';
-import Text from './components/Text';
-
-import Layout from './layouts/Layout';
-
-export { Heading, Link, Text, Layout };
+export { default as Heading } from './components/Heading';
+export { default as Link } from './components/Link';
+export { default as Text } from './components/Text';
+export { default as Layout } from './layouts/Layout';
