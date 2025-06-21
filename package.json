@@ -1,7 +1,7 @@
 {
   "name": "@dariobrozzi/c64-design-system",
   "description": "A vintage Design System inspired on Commodore interface",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dariobrozzi/c64-design-system.git"
@@ -23,12 +23,12 @@
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.d.ts"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     }
   },
   "scripts": {
-    "build": "npm run build:tokens && tsc -b && vite build && npm run copy:assets",
+    "build": "npm run build:tokens && tsc && vite build && npm run copy:assets",
     "build:tokens": "style-dictionary build --config style-dictionary/sd.config.js",
     "copy:assets": "cp -R src/assets dist/assets && cp src/fonts.css dist/fonts.css && cp -R src/generated/style-dictionary dist/style-dictionary",
     "lint": "eslint .",

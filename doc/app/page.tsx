@@ -1,13 +1,13 @@
 // import Image from "next/image";
-import Layout from 'c64-design-system/layouts/Layout';
-import Text from 'c64-design-system/components/Text';
-import Heading from 'c64-design-system/components/Heading';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import { BasicLayout } from 'c64-design-system/layouts';
+import { Text } from 'c64-design-system/components/text';
+import { Heading } from 'c64-design-system/components/heading';
+import { Header } from './components/header';
+import { Footer } from './components/footer';
 
 export default function Home() {
   return (
-    <Layout header={Header()} footer={Footer()}>
+    <BasicLayout header={Header()} footer={Footer()}>
       <main >
         <Text c64 centered>
           This is a Vintage Design System inspired on Commodore interface, created for fun.
@@ -237,6 +237,6 @@ export default function Home() {
           </ul>
         </section>
       </main>
-    </Layout>
+    </BasicLayout>
   );
 }

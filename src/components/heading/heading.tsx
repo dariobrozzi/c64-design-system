@@ -6,7 +6,7 @@ interface HeadingProps {
   centered?: boolean;
 }
 
-export default function Heading({
+export function Heading({
   children,
   size = 'base',
   level = 1,

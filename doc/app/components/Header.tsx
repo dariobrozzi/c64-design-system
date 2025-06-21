@@ -1,6 +1,6 @@
-import Heading from 'c64-design-system/components/Heading';
+import { Heading } from 'c64-design-system/components/heading';
 
-export default function Header() {
+export function Header() {
   return (
     <div style={{ marginInline: 'var(--spacing-4)' }}>
       <Heading level={1} size="large" centered>

@@ -1,8 +1,8 @@
-import Heading from 'c64-design-system/components/Heading';
-import Link from 'c64-design-system/components/Link';
-import Text from 'c64-design-system/components/Text';
+import { Heading } from 'c64-design-system/components/heading';
+import { Link } from 'c64-design-system/components/link';
+import { Text } from 'c64-design-system/components/text';
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer style={{
       marginInline: 'var(--spacing-6)',

@@ -3,7 +3,7 @@ interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   size?: 'small' | 'medium' | 'large';
 }
 
-export default function Link({
+export function Link({
   children,
   size = 'medium',
   ...props }: LinkProps) {

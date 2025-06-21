@@ -1,4 +1,4 @@
-export default function Layout({ children, header, footer }: { children: React.ReactNode, header?: React.ReactNode, footer?: React.ReactNode }) {
+export function BasicLayout({ children, header, footer }: { children: React.ReactNode, header?: React.ReactNode, footer?: React.ReactNode }) {
   return (
     <div style={{
       background: 'var(--background-secondary)',

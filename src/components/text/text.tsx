@@ -6,7 +6,7 @@ interface TextProps {
   centered?: boolean;
 }
 
-export default function Text({
+export function Text({
   children,
   as: HTMLElement = 'p',
   size = 'base',
